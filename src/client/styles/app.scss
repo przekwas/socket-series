@@ -1,0 +1,39 @@
+// Vaporwave Color Scheme
+
+// Colors
+$body-bg: #0091ea; // Bright Blue
+$primary: #ff6ad5; // Neon Pink
+$secondary: #ffdb58; // Bright Yellow
+$success: #00f764; // Neon Green
+$info: #01cdfe; // Bright Cyan
+$warning: #ff61a6; // Pinkish
+$danger: #ff2965; // Neon Red
+$light: #9a83d4; // Pastel Purple
+$dark: #260e37; // Dark Blueish Purple
+
+// Link Colors
+$link-color: #01cdfe; // Bright Cyan
+$link-hover-color: darken($link-color, 10%);
+
+// Card Customization
+$card-bg: $light; // Use the pastel purple for card background
+$card-border-color: $dark; // Dark blueish purple for card border
+$card-color: $dark; // Dark blueish purple for text color
+$card-border-radius: 0.5rem;
+$card-box-shadow: 0 4px 8px rgba($dark, 0.1); // Subtle shadow using dark color
+
+// Applying custom properties to Bootstrap components
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+.card {
+	background-color: $card-bg;
+	color: $card-color;
+	border-color: $card-border-color;
+	border-radius: $card-border-radius;
+	box-shadow: $card-box-shadow;
+	margin-bottom: 1rem;
+}
+
+// Bootstrap Import
+@import '~bootstrap/scss/bootstrap.scss';
